@@ -1,0 +1,13 @@
+[project]
+name = "website-contacts-mcp"
+version = "0.1.0"
+description = "Company contact channels from a website: role emails, WhatsApp, LINE, Telegram, social profiles. No personal data."
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.9,<2",
+    "httpx>=0.27",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "tldextract>=5.1",
+    "phonenumbers>=8.13",
+]

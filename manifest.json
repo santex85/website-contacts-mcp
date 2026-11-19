@@ -1,0 +1,62 @@
+{
+  "manifest_version": "0.4",
+  "name": "website-contacts-mcp",
+  "display_name": "Website Contacts & Socials (role emails, WhatsApp, LINE, Telegram)",
+  "version": "0.1.0",
+  "description": "Company contact channels from a website: role emails, WhatsApp, LINE, Telegram, social profiles. No personal data.",
+  "long_description": "Give it a company website and get its published contact channels: role email addresses on the site's own domain (info@, sales@, reservations@), business phone lines from tel: and WhatsApp links (E.164), WhatsApp, LINE and Telegram links, and the company's Facebook, Instagram, LinkedIn, X, YouTube and TikTok. Personal mailboxes, free-mail addresses and people's names are never returned. robots.txt is obeyed, pages are read one by one with a pause, blocked sites are reported and never bypassed. No API key needed.",
+  "author": {
+    "name": "santex85",
+    "url": "https://github.com/santex85"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santex85/website-contacts-mcp"
+  },
+  "homepage": "https://github.com/santex85/website-contacts-mcp",
+  "support": "https://github.com/santex85/website-contacts-mcp/issues",
+  "license": "MIT",
+  "keywords": [
+    "contacts",
+    "email",
+    "whatsapp",
+    "line",
+    "leads"
+  ],
+  "server": {
+    "type": "uv",
+    "entry_point": "src/server.py",
+    "mcp_config": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "${__dirname}",
+        "src/server.py"
+      ],
+      "env": {
+        "MCP_TRANSPORT": "stdio"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "get_website_contacts",
+      "description": "Company contact channels published on a website: role emails, phones from tel:/WhatsApp links, WhatsApp, LINE, Telegram and company social profiles."
+    },
+    {
+      "name": "get_websites_contacts",
+      "description": "The same contact card for up to 10 websites at once."
+    }
+  ],
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "linux",
+      "win32"
+    ],
+    "runtimes": {
+      "python": ">=3.10"
+    }
+  }
+}

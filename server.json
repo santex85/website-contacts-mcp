@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.santex85/website-contacts-mcp",
+  "title": "Website Contacts & Socials (role emails, WhatsApp, LINE, Telegram)",
+  "description": "Contact channels from a website: role emails, WhatsApp, LINE, Telegram, socials. No personal data.",
+  "repository": {
+    "url": "https://github.com/santex85/website-contacts-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/santex85/website-contacts-mcp/releases/download/v0.1.0/website-contacts-mcp.mcpb",
+      "version": "0.1.0",
+      "fileSha256": "FILL_IN_AFTER_MCPB_PACK",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

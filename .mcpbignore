@@ -1,0 +1,10 @@
+.venv/
+tests/
+__pycache__/
+*.pyc
+*.mcpb
+server.json
+glama.json
+mcpize.yaml
+.mcpbignore
+uv.lock

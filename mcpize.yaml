@@ -1,0 +1,10 @@
+version: 1
+name: website-contacts-mcp
+description: Company contact channels from a website - role emails (info@, sales@), business phones from tel/WhatsApp links, WhatsApp, LINE, Telegram and company social profiles. No personal mailboxes, robots.txt respected.
+runtime: python
+entry: src/server.py
+build:
+  install: python -m venv .venv && .venv/bin/pip install --no-cache-dir -r requirements.txt
+startCommand:
+  type: http
+  command: .venv/bin/python src/server.py
