@@ -13,7 +13,7 @@
       "registryType": "mcpb",
       "identifier": "https://github.com/santex85/website-contacts-mcp/releases/download/v0.1.0/website-contacts-mcp.mcpb",
       "version": "0.1.0",
-      "fileSha256": "FILL_IN_AFTER_MCPB_PACK",
+      "fileSha256": "62b1f5043bf30efea5d93bc03e805e6b05874223af6eda90b3172c0f2b4ad6e7",
       "transport": {
         "type": "stdio"
       }
